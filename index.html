@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="/dist/bundle.js"></script>
+</head>
+
+<body>
+  <label for="stateResolveTime"></label>
+  <input type="number" name="stateResolveTime" id="stateResolveTime" min="1000" step="1000" max="10000" value="4000">
+  <label for="stateResolveChooser">Choose resolve state</label>
+  <select name="stateResolveChooser" id="stateResolveChooser">
+    <option value="FULFILLED">FULFILLED</option>
+    <option value="REJECTED" selected="selected">REJECTED</option>
+  </select>
+  <button onclick="launch()">LAUNCH</button>
+  <button onclick="testState()">TEST STATE</button>
+</body>
+
+</html>
